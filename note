@@ -1,0 +1,19 @@
+CRUD
+
+-Read
+    (tao ra du lieu mau truoc)=> hien thi ra HTML
+    loadData
+-Delete
+-Create
+    B1: Tao form
+    B2: Lay thong tin tu form(C)
+    B3: LoadFile saveFile
+    B4: Tao cac phuong thuc
+    B5: Test
+-Detail
+-update
+    B1: Tao form
+    B2: Lay thong tin tu form(C)
+    B3: LoadFile saveFile
+    B4: Tao cac phuong thuc
+    B5: Test
