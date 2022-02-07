@@ -1,4 +1,7 @@
 <?php
+include_once "data.php";
+$users = loadData();
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -10,16 +13,26 @@
     <title>Document</title>
 </head>
 <body>
+
 <form action="" method="post">
 </form>
-<table>
+<table border="1">
     <thead>
     <tr>
         <th>STT</th>
         <th>Name</th>
         <th>Age</th>
+        <th>Delete</th>
     </tr>
     </thead>
+    <?php foreach ($users as $index=>$value):?>
+    <tr>
+        <td><?php echo $index +1 ?></td>
+        <td><?php echo $value["name"] ?></td>
+        <td><?php echo $value["age"] ?></td>
+        <td><a onclick="return confirm('Are you sure?')" href="index.php?action&id=<?php echo $index?>">Delete</a></td>
+    </tr>
+    <?php endforeach;?>
     <tbody>
 
     </tbody>
